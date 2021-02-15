@@ -1,0 +1,113 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boeing: The Boeing Company</title>
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="./burger.css">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+</head>
+<body>
+    <div class = "wrapper">
+        <!-- 메뉴 버튼 및 영상 레이어 -->
+        <div class = "layer" ></div>
+        <div class = "layer2"></div>
+        <div class = "button">
+            <input id = "air-b" type="image" name = "button" onclick = "move(1)" src = "./img/business.png">
+            <input id = "air-n" type="image" name = "button" onclick = "move(2)" src = "./img/news.png">
+        </div>
+        <div class = "video">
+                <video src="./WebBanner.mp4" autoplay muted playsinline loop></video>
+        </div>
+        
+        <!-- 헤더 및 웰컴 문구 -->
+        <div class = "header">
+            <img class = "logo" src="./img/logo.png" alt="logo">
+            <div id = "burger"> 
+                <div id = "line-wrapper">
+                    <div id = "line-top" class = "line init top-reverse"></div>
+                    <div id = "line-mid" class = "line init mid-reverse"></div>
+                    <div id = "line-bot" class = "line init bot-reverse"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "welcome">Build Something Better</div>
+
+        <!-- 홈화면 배너 -->
+            <a href="http://aeroprop.khu.ac.kr/"  class = "banner" target = "_blank"><img id = "banner" data-aos="fade-up" data-aos-duration="3000" src="./img/banner12.jpg" alt="banner1"></a>
+
+        <!-- 비즈니스 탭 -->
+        <div class = "busi" id = "tab1">
+            <img class = "blue" data-aos="fade-up" data-aos-duration="3000" src="./img/blue.png" alt="blue banner">
+                <a href="http://www.boeing.com/commercial/" target = "_blank"><img class = "flight" data-aos="fade-up" data-aos-duration="3000" src="./img/ico_flight_0.png" alt="flight"></a>
+                <span class = "exp" id = "flight" data-aos="fade-up" data-aos-duration="3000">Flight</span>
+                <a href="http://www.boeing.com/space/"target = "_blank"><img class = "space" data-aos="fade-up" data-aos-duration="3000" src="./img/ico_space_0.png" alt="space"></a>
+                <span class = "exp" id = "space" data-aos="fade-up" data-aos-duration="3000">Space</span>
+        </div>
+
+        <!-- 슬라이더 1-->
+        <!-- <div id = "wrap">
+            <div class = "container" data-aos="fade-up" data-aos-duration="3000">
+                <img class = "active" src="img/slider1.jpg" alt="slider1">
+                <img src="img/slider2.jpg" alt="slider2">
+                <img src="img/slider4.jpg" alt="slider4">
+            </div>
+        </div> -->
+
+        <!-- 슬라이더2 -->
+        <img id="slider" src="./img/slider1.jpg">
+
+        <!-- 뉴스탭 -->
+        <div id = "tab2">
+            <img id = "banner2" data-aos="fade-up" data-aos-duration="3000" src="./img/banner2.png" alt="banner2">
+            <div id="container" class = "news" >
+                <ul class="prod-list" data-aos="fade-up" data-aos-duration="3000">
+                    <li>
+                        <img id= "news1" src="./img/news1.jpg" alt="news1">
+                        <a href = "https://boeing.mediaroom.com/news-releases-statements?item=130802#assets_20295_130802-117" target = "_blank">
+                        <div class="caption">
+                            <p>21.01.11 : Boeing to Provide Six More Solar Arrays for International Space Station</p>
+                        </div></a>
+                    </li>
+                    <li>
+                        <img id= "news2" src="./img/news2.jpg" alt="news2">
+                        <a href="https://boeing.mediaroom.com/news-releases-statements?item=130801" target = "_blank">
+                        <div class="caption">
+                            <p>20.12.22 : Space Launch System Exploration Upper Stage Passes Critical Design Review</p>
+                        </div></a>
+                    </li>
+                    <li>
+                        <img id= "news3" src="./img/news3.jpg" alt="news3">
+                        <a href="https://boeing.mediaroom.com/news-releases-statements?item=130788" target = "_blank">
+                        <div class="caption">
+                            <p>20.12.20 : Boeing Uncrewed Loyal Wingman Conducts First High-Speed Taxi Test</p>
+                        </div></a>
+                    </li>
+                    <li>
+                        <img id= "news4" src="./img/news4.jpg" alt="news4">
+                        <a href="https://boeing.mediaroom.com/news-releases-statements?item=130776#assets_20295_130776-117" target = "_blank">
+                        <div class="caption">
+                            <p>20.12.01 : Boeing Starts Production of T-7A Weapons Systems Trainers, Operational Flight Trainer</p>
+                        </div></a>
+                    </li>
+                    <li>
+                        <img id= "news5" src="./img/news5.jpg" alt="news5">
+                        <a href="https://boeing.mediaroom.com/news-releases-statements?item=130767#assets_20295_130767-117" target = "_blank">
+                        <div class="caption">
+                            <p>20.11.09 : Boeing Secures More Than $800M in Middle East Training and Support Contracts</p>
+                        </div></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src = "./grid.js"></script>
+    <script> AOS.init(); </script>
+</body>
+</html>
+
